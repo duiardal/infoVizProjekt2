@@ -1,0 +1,51 @@
+<div class="col-md-12">
+	<div class="row">
+		<div class="col-md-1" id="testCss">
+			<ul style="list-style-type: none;">
+				<li class="key" style="border-top: 10px solid #e5ebf0;">0%-10%</li>
+		    	<li class="key" style="border-top: 10px solid #ccd7e2;">10%-20%</li>
+		    	<li class="key" style="border-top: 10px solid #b3c3d3;">20%-30%</li>
+		    	<li class="key" style="border-top: 10px solid #99afc5;">30%-40%</li>
+		    	<li class="key" style="border-top: 10px solid #809bb7;">40%-50%</li>
+		    	<li class="key" style="border-top: 10px solid #6787a8;">50%-60%</li>
+		    	<li class="key" style="border-top: 10px solid #4d739a;">60%-70%</li>
+		    	<li class="key" style="border-top: 10px solid #345f8b;">70%-80%</li>
+		    	<li class="key" style="border-top: 10px solid #1b4b7d;">80%-90%</li>
+		    	<li class="key" style="border-top: 10px solid #02386f;">90%-100%</li>
+		    </ul>
+		</div>
+		<div class="col-md-9">
+			<datamap
+				map="mapObject"
+				plugins="mapPlugins"
+				plugin-data="mapPluginData"
+				data-ng-if="showMap"
+			  >
+			</datamap>
+		</div>
+		<div class="col-md-2">
+			<h4>Choose variables to see the data</h4>
+			<h5 style="color: #5d5d5d;">Hover over a country to see details</h5>
+			<div class="form-group">
+				<label for="sel1">Question:</label>
+				<select class="form-control" id="sel1" ng-model="selQuestion" ng-change="changeQuestion(selQuestion)" placeholder="selQuestion">
+					<option ng-repeat="k in questionVar" value="{{k}}">{{k}}</option>
+				</select>
+			</div>
+			<div class="form-group" ng-if="selectedQuestion">
+				<label for="sel1">Year:</label>
+				<select class="form-control" id="sel1" ng-model="selectedYear" ng-change="changeYear(selectedYear)">
+					<option ng-repeat="i in yearVar" value="{{i}}">{{i}}</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	</br>
+	</br>
+	</br>
+	<div class="row">
+		<div class="col-md-10">
+			<nvd3 style="font-family: futura;" options="options" data="data"></nvd3>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,122 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: white;
+}
+
+
+h1, h2, h3, h4, h5, h6, li, a, strong {
+  color: black;
+  font-family: futura;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  color: black;
+  /*border-top: 1px solid black;*/
+  font-family: futura;
+}
+
+#customHeader {
+  text-align: center;
+  width: 100%;
+  margin-top: 2em;
+  color: black;
+  border: none;
+  text-decoration: none;
+}
+
+
+#customHeader2:hover {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+#customHeader2:visited {
+  text-decoration: none;
+}
+
+#everything {
+  padding: 0;
+}
+
+#myImg {
+  width: 100%;
+  text-align: center;
+}
+
+#projectImg {
+  text-align: center;
+}
+
+#myImg:hover {opacity: 0.4;}
+
+#particleJs {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#infoText {
+  text-align: left;
+  font-weight: bold;
+}
+
+path {
+  stroke: white;
+  stroke-width: 2;
+  fill: steelblue;
+}
+
+.plot {
+  fill: none;
+  stroke: #aec7e8;
+  stroke-width: 2;
+}
+circle {
+  fill: steelblue;
+  stroke: white;
+}
+
+#interactiveMap {
+  width: 1em;
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+.feature {
+  fill: #ccc;
+  cursor: pointer;
+}
+
+.feature.active {
+  fill: orange;
+}
+
+.mesh {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.datamaps-legend dt, .datamaps-legend dd {
+  float: none;
+}
+.datamaps-legend {
+  right: -50px;
+}

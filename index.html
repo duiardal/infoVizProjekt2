@@ -1,0 +1,63 @@
+<html ng-app="d3Test">
+	<head>
+
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>D3-test</title>
+		<!--Bootstrap stylesheet-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.css">
+
+	    <!-- Angular -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+	    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.js"></script>
+
+	    <!-- JQUERY -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	    <!--- D3 -->
+	    <script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+		<!--<script src="bower_components/datamaps/dist/datamaps.all.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.8/datamaps.all.js"></script>
+		<script src="bower_components/angular-datamaps/dist/angular-datamaps.js"></script>
+
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.9/angular-nvd3.min.js"></script>
+
+
+
+	    <!--App.js-->
+		<script src="/js/app.js"></script>
+		<script src="/js/controllers/mainController.js"></script>
+		<script src="/js/controllers/particlesCtrl.js"></script>
+		<script src="/js/model/model.js"></script>
+
+	</head>
+
+	<body>
+		<!--<div ng-controller="particlesCtrl">
+			<div particles-drv ng-show="showParticles">
+			</div>
+		</div>-->
+		    <div class="page-header" id ="customHeader">
+		        <div class="container-fluid">
+		            <div class="col-md-12">
+	            		<h2 style="color: #02386f;">
+	            			Importance in Life
+	        			</h2>
+	        		</div>
+		        </div>
+		    </div>
+		    
+			<!--View-->
+
+			<div ng-view></div>
+			
+	</body>
+</html>
